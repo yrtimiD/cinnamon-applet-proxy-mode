@@ -12,12 +12,13 @@ function _ccc(str) {
 }
 
 class ProxyModeApplet extends Applet.IconApplet {
+	// disabled, not supported on Cinnamon$4.4.8
 	// _meta = null;
-	_menuItems = null;
-	_menuModeChangedHandlerId = null;
-	_settingsModeChangeHandlerId = null;
-	_proxySettings = null;
-	_menu = null;
+	// _menuItems = null;
+	// _menuModeChangedHandlerId = null;
+	// _settingsModeChangeHandlerId = null;
+	// _proxySettings = null;
+	// _menu = null;
 
 	constructor(metadata, orientation, panelHeight, instanceId) {
 		super(orientation, panelHeight, instanceId);
