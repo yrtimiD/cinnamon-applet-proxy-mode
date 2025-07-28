@@ -95,7 +95,13 @@ class ProxyModeApplet extends Applet.IconApplet {
 		}
 	}
 
-	on_applet_clicked() {
+	on_applet_clicked(event) {
+		// HACK: protection from weird cinnamon bug where both context and main menu opens and main one stucks along with whole cinnamon
+		// observer on cinnamon 4.4.8
+		if (this._applet_context_menu.isOpen) {
+			this._applet_context_menu.toggle();
+		}
+
 		this._menu.toggle();
 	}
 
