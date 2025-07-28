@@ -37,7 +37,7 @@ class ProxyModeApplet extends Applet.IconApplet {
 
 	_initContextMenu() {
 		if (this._applet_context_menu) {
-			let openSettingsItem = new PopupMenu.PopupIconMenuItem(this._("Open Network Settings"), 'preferences-system-network-symbolic', St.IconType.SYMBOLIC);
+			let openSettingsItem = new PopupMenu.PopupIconMenuItem(_ccc("Network settings"), 'preferences-system-network-symbolic', St.IconType.SYMBOLIC);
 			openSettingsItem.connect('activate', () => {
 				Util.spawnCommandLine("cinnamon-settings network");
 			});
