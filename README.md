@@ -1,6 +1,9 @@
 # cinnamon-applet-proxy-mode
 [Cinnamon](https://projects.linuxmint.com/cinnamon/) applet which allows switch between system proxy modes (None, Manual, Automatic) from the panel.
 
+## Compatibility
+Tested on Cinnamon:
+* 4.4.8
 
 ## Development
 Restart applet on file change
