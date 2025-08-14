@@ -72,7 +72,7 @@ class ProxyModeApplet extends Applet.IconApplet {
 	}
 
 	_connectSettings() {
-		this._proxySettings = new Gio.Settings({ schema: 'system.proxy' });
+		this._proxySettings = new Gio.Settings({ schema: 'org.gnome.system.proxy' });
 		this._settingsModeChangeHandlerId = this._proxySettings.connect('changed::mode', () => {
 			this._updateMenu();
 		});
