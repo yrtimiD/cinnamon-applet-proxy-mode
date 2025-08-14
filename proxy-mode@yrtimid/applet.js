@@ -32,7 +32,7 @@ class ProxyModeApplet extends Applet.IconApplet {
 
 	_init(orientation, panelHeight, instanceId) {
 		super._init(orientation, panelHeight, instanceId);
-		this.set_applet_tooltip(this._("Switch Proxy Mode"));
+		this.set_applet_tooltip(this._("Proxy Mode Switcher"));
 		this.set_applet_icon_symbolic_name("preferences-system-network-proxy-symbolic");
 	}
 
